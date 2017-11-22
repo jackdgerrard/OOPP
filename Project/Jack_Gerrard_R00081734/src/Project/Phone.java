@@ -69,22 +69,27 @@ public class Phone extends Product {
 		this.storageSpaceGB = storageSpace+"GB";
 	}
 	
+	
 	/************
 	 * toString and Print methods
+	 * Super used in to String 
 	 **************/
+
+	@Override
+	public String toString() {
+		return "Phone [make=" + make + ", model=" + model + ", storageSpaceGB=" + storageSpaceGB + ", storageSpace="
+				+ storageSpace + ", getProductID()=" + getProductID() + ", getPrice()=" + getPrice() + ", getName()="
+				+ getName() + ", getDescription()=" + getDescription() + ", toString()=" + super.toString()
+				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + "]";
+	}
+
 
 
 	
-	@Override
-	public String toString() {
-		return "Phone [make=" + make + ", model=" + model + ", storageSpaceGB=" + storageSpaceGB + ", getProductID()="
-				+ getProductID() + ", getPrice()=" + getPrice() + ", getName()=" + getName() + ", getDescription()="
-				+ getDescription() + ", toString()=" + super.toString() + ", getClass()=" + getClass() + ", hashCode()="
-				+ hashCode() + "]";
-	}
+
 
 	@Override
-	public void super.void print(){
+	public void print(){
 		System.out.println(this.toString());
 	}
 	
