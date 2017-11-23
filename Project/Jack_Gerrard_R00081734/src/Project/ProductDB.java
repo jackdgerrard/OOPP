@@ -23,18 +23,18 @@ public class ProductDB {
 	 * Methods
 	 **************/
 	
-	private void add(Product a) {
+	public void add(Product a) {
 		this.list.add(a);
 		System.out.println(a+" has been removed");
 	}
 	
 
 
-	private void  remove(Product p) {
+	public void  remove(Product p) {
 		this.list.remove(p);
 	}
 	
-	private Product find(int searchID) {
+	public Product find(int searchID) {
 		
 		// set and initialize product to be returned.
 		Product p=null;
