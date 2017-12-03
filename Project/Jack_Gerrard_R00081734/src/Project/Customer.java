@@ -8,14 +8,13 @@ public class Customer {
 	 * Attributes
 	 **************/
 	String name, address;
-	ArrayList<Order> Orders = new ArrayList<Order>();
+	ArrayList<OrderDetails> Orders = new ArrayList<OrderDetails>();
 	
 	/************
 	 * Constructor
 	 **************/
 
 	public Customer(String name, String address) {
-		super();
 		this.name = name;
 		this.address = address;
 	}	
@@ -44,15 +43,14 @@ public class Customer {
 	 * Orders methods
 	 **************/
 	
-	private void addOrder(Order a) {
+	public void addOrder(OrderDetails a) {
 		this.Orders.add(a);
-		System.out.println(a+" has been removed");
+		System.out.println(a+" has been added to orders");
 	}
 	
-
-
-	private void  removeOrder(Order a) {
+	public void  removeOrder(OrderDetails a) {
 		this.Orders.remove(a);
+		System.out.println(a+" has been removed from orders");
 	}
 
 	
@@ -60,13 +58,15 @@ public class Customer {
 	 * toString and Print methods
 	 **************/
 
-
 	public String toString() {
-		return "Customer [name=" + name + ", address=" + address + "]";
+		return "Customer name=" + name + ", address=" + address + ", Orders=" + Orders;
 	}
+
 	
 	public void print() {
 		System.out.println(toString());
 	}
+
+
 
 }

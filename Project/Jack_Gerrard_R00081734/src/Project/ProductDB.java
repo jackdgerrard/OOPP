@@ -14,14 +14,15 @@ public class ProductDB {
 	 * Constructor
 	 **************/
 	
-	public ProductDB(ArrayList<Product> list) {
-		super();
-		this.list = list;
+	public ProductDB() {
+		list = new ArrayList<Product>();
 	}
 	
 	/************
 	 * Methods
 	 **************/
+	
+	// add
 	
 	public void add(Product a) {
 		this.list.add(a);
@@ -29,17 +30,20 @@ public class ProductDB {
 	}
 	
 
+	//remove
 
 	public void  remove(Product p) {
 		this.list.remove(p);
 	}
+	
+	//find
 	
 	public Product find(int searchID) {
 		
 		// set and initialize product to be returned.
 		Product p=null;
 		
-		//this for loop searchs through the arraylist for a product ID that matches the product ID of p, which changes on each iteration of loop
+		//this for loop searches through the ArrayList for a product ID that matches the product ID of p, which changes on each iteration of loop
 		for(int i=0; i<list.size(); i++) {
 			
 			p = this.list.get(i);
