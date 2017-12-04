@@ -56,9 +56,18 @@ public class ProductDB {
 		
 		if(p==null) {
 			System.out.println("productID not found");
+			return null;
 		}
 	
 		return p;
+		
+	}
+	
+	public void getAll() {
+		
+		for(int i =0; i<this.list.size();i++) {
+			System.out.println(this.list.get(i));
+		}
 		
 		
 	}

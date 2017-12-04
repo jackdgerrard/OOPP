@@ -5,7 +5,7 @@ public class Product {
 	/************
 	 * Attributes
 	 **************/
-	private static int IDCounter = 0000000;
+	private static int IDCounter = 10214856;
 	private int ProductID;
 	private double price;
 	private String name, description;
@@ -77,8 +77,8 @@ public class Product {
 	 **************/
 	
 	public String toString() {
-		return "Product [ProductID=" + ProductID + ", price=" + price + ", name=" + name + ", description="
-				+ description + "]";
+		return "Product ID=" + ProductID + ", price=" + price + ", name=" + name + ", description="
+				+ description;
 	}
 	
 	public void print() {

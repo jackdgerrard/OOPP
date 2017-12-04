@@ -54,16 +54,6 @@ public class Phone extends Product {
 	}
 
 
-	public void setStorageSpaceDB(String storageSpaceDB) {
-		this.storageSpaceGB = storageSpaceDB;
-	}
-
-
-	public String getStorageSpace() {
-		return storageSpaceGB;
-	}
-
-
 	public void setStorageSpace(int storageSpace) {
 		this.storageSpace = storageSpace;
 		this.storageSpaceGB = storageSpace+"GB";
@@ -71,24 +61,14 @@ public class Phone extends Product {
 	
 	
 	/************
-	 * toString and Print methods
-	 * Super used in to String 
+	 * toString and Print methods -- Super used in to String 
 	 **************/
 
-	@Override
 	public String toString() {
-		return "Phone [make=" + make + ", model=" + model + ", storageSpaceGB=" + storageSpaceGB + ", storageSpace="
-				+ storageSpace + ", getProductID()=" + getProductID() + ", getPrice()=" + getPrice() + ", getName()="
-				+ getName() + ", getDescription()=" + getDescription() + ", toString()=" + super.toString()
-				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + "]";
+		return "Phone:  [make=" + make + ", model=" + model + ", storageSpace=" + storageSpaceGB +" " + super.toString() + "]";
 	}
 
 
-
-	
-
-
-	@Override
 	public void print(){
 		System.out.println(this.toString());
 	}

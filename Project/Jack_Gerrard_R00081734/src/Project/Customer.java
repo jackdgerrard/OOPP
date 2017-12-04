@@ -52,6 +52,15 @@ public class Customer {
 		this.Orders.remove(a);
 		System.out.println(a+" has been removed from orders");
 	}
+	
+	public void getOrders() {
+		
+		for(int i =0; i<this.Orders.size();i++) {
+			System.out.println(this.Orders.get(i));
+		}
+		
+		
+	}
 
 	
 	/************
